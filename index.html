@@ -1,97 +1,92 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Etique Luxury Beauty | Premium Salon & Spa in Nairobi</title>
-    <meta name="description" content="Etique Luxury Beauty offers premium hair, nails, and spa services in an exclusive, relaxing environment. Book your appointment today.">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Etique Luxury Beauty | Premium Salon &amp; Spa in Nairobi</title>
+<meta content="Etique Luxury Beauty offers premium hair, nails, and spa services in an exclusive, relaxing environment. Book your appointment today." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav class="navbar" id="navbar"><div class="nav-container">
-        <a href="#home" class="nav-logo">ÉTIQUE</a>
-        <ul class="nav-links" id="navLinks"><li><a href="#home" class="nav-link active">Home</a></li><li><a href="#services" class="nav-link">Services</a></li><li><a href="#experience" class="nav-link">Experience</a></li><li><a href="#booking" class="nav-link">Book</a></li></ul>
-        <a href="#booking" class="nav-cta">Reserve</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div></nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <span class="hero-badge">Welcome to Elegance</span>
-            <h1>Discover Your<br>True <span class="accent">Radiance.</span></h1>
-            <p class="hero-sub">An exclusive sanctuary for premium hair styling, flawless nails, and rejuvenating spa treatments.</p>
-            <div class="hero-actions">
-                <a href="#services" class="btn btn-outline">Our Services</a>
-                <a href="#booking" class="btn btn-primary">Book Appointment</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="section">
-        <div class="container"><div class="section-header"><h2>Our Curated Services</h2><p>Tailored treatments delivered with precision and artistry.</p></div>
-        <div class="services-grid">
-            <div class="svc-card">
-                <div class="svc-img">Hair Design</div>
-                <div class="svc-content">
-                    <h3>Hair Styling & Color</h3>
-                    <p>Bespoke cuts, balayage, silk presses, and premium extensions. Transform your look with our master stylists.</p>
-                    <button class="btn btn-small" onclick="bookSvc('Hair Services')">Reserve</button>
-                </div>
-            </div>
-            <div class="svc-card">
-                <div class="svc-img">Nail Studio</div>
-                <div class="svc-content">
-                    <h3>Nail Artistry</h3>
-                    <p>BIAB, acrylics, gel manicures, and spa pedicures in a pristine, hygienic environment.</p>
-                    <button class="btn btn-small" onclick="bookSvc('Nail Services')">Reserve</button>
-                </div>
-            </div>
-            <div class="svc-card">
-                <div class="svc-img">Spa Therapy</div>
-                <div class="svc-content">
-                    <h3>Spa & Aesthetics</h3>
-                    <p>Deep tissue massage, facials, waxing, and lash extensions designed to rejuvenate your body and mind.</p>
-                    <button class="btn btn-small" onclick="bookSvc('Spa & Aesthetics')">Reserve</button>
-                </div>
-            </div>
-        </div></div>
-    </section>
-
-    <section id="experience" class="experience-section">
-        <div class="container"><div class="exp-grid">
-            <div class="exp-content">
-                <h2>The Étique <br>Experience</h2>
-                <p>We believe that beauty is not just about how you look, but how you feel. From the moment you step into Étique, you are enveloped in an atmosphere of tranquility and luxury.</p>
-                <p>Enjoy complimentary champagne, artisan coffee, and personalized consultations with every visit.</p>
-                <ul class="exp-list">
-                    <li>✦ Premium internationally sourced products</li>
-                    <li>✦ Highly trained specialist technicians</li>
-                    <li>✦ Private VIP suites available</li>
-                </ul>
-            </div>
-            <div class="exp-image">Salon Interior</div>
-        </div></div>
-    </section>
-
-    <section id="booking" class="section booking-section">
-        <div class="container"><div class="booking-wrap">
-            <div class="section-header"><h2>Reserve Your Time</h2><p>Please provide your details below to request a booking. Our concierge will confirm your appointment shortly.</p></div>
-            <form class="booking-form" id="bookingForm">
-                <div class="form-row"><div class="form-group"><label>First & Last Name</label><input type="text" name="name" required></div><div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div></div>
-                <div class="form-row"><div class="form-group"><label>Service Category</label><select name="service" id="svcSelect" required><option value="">Select Service</option><option>Hair Services</option><option>Nail Services</option><option>Spa & Aesthetics</option><option>Bridal Package</option></select></div><div class="form-group"><label>Specific Treatment (Optional)</label><input type="text" name="treatment" placeholder="e.g. Balayage, Gel Mani"></div></div>
-                <div class="form-row"><div class="form-group"><label>Date Requested</label><input type="date" name="date" required></div><div class="form-group"><label>Time Preference</label><select name="time"><option>Morning (9AM - 12PM)</option><option>Afternoon (12PM - 4PM)</option><option>Evening (4PM - 7PM)</option></select></div></div>
-                <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
-            </form>
-        </div></div>
-    </section>
-
-    <footer class="footer"><div class="container">
-        <div class="footer-brand">ÉTIQUE</div>
-        <p>Luxury Beauty & Spa. Lavington, Nairobi.</p>
-        <div class="footer-links"><a href="https://wa.me/254700000002" target="_blank">WhatsApp</a> | <a href="tel:+254700000002">Call</a> | <a href="admin.html">Admin</a></div>
-        <p class="copyright">© 2024 Étique Luxury Beauty. All rights reserved.</p>
-    </div></footer>
-
-    <div class="toast" id="toast"></div>
-    <script src="script.js"></script>
+<nav class="navbar" id="navbar"><div class="nav-container">
+<a class="nav-logo" href="#home">ÉTIQUE</a>
+<ul class="nav-links" id="navLinks"><li><a class="nav-link active" href="#home">Home</a></li><li><a class="nav-link" href="#services">Services</a></li><li><a class="nav-link" href="#experience">Experience</a></li><li><a class="nav-link" href="#booking">Book</a></li></ul>
+<a class="nav-cta" href="#booking">Reserve</a>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</div></nav>
+<section class="hero" id="home" style=" background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://loremflickr.com/1200/800/luxury,salon,makeup?lock=100') !important; background-size: cover !important; background-position: center !important;">
+<div class="hero-content">
+<span class="hero-badge">Welcome to Elegance</span>
+<h1>Discover Your<br/>True <span class="accent">Radiance.</span></h1>
+<p class="hero-sub">An exclusive sanctuary for premium hair styling, flawless nails, and rejuvenating spa treatments.</p>
+<div class="hero-actions">
+<a class="btn btn-outline" href="#services">Our Services</a>
+<a class="btn btn-primary" href="#booking">Book Appointment</a>
+</div>
+</div>
+</section>
+<section class="section" id="services">
+<div class="container"><div class="section-header"><h2>Our Curated Services</h2><p>Tailored treatments delivered with precision and artistry.</p></div>
+<div class="services-grid">
+<div class="svc-card">
+<div class="svc-img">Hair Design</div>
+<div class="svc-content">
+<h3>Hair Styling &amp; Color</h3>
+<p>Bespoke cuts, balayage, silk presses, and premium extensions. Transform your look with our master stylists.</p>
+<button class="btn btn-small" onclick="bookSvc('Hair Services')">Reserve</button>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-img">Nail Studio</div>
+<div class="svc-content">
+<h3>Nail Artistry</h3>
+<p>BIAB, acrylics, gel manicures, and spa pedicures in a pristine, hygienic environment.</p>
+<button class="btn btn-small" onclick="bookSvc('Nail Services')">Reserve</button>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-img">Spa Therapy</div>
+<div class="svc-content">
+<h3>Spa &amp; Aesthetics</h3>
+<p>Deep tissue massage, facials, waxing, and lash extensions designed to rejuvenate your body and mind.</p>
+<button class="btn btn-small" onclick="bookSvc('Spa &amp; Aesthetics')">Reserve</button>
+</div>
+</div>
+</div></div>
+</section>
+<section class="experience-section" id="experience">
+<div class="container"><div class="exp-grid">
+<div class="exp-content">
+<h2>The Étique <br/>Experience</h2>
+<p>We believe that beauty is not just about how you look, but how you feel. From the moment you step into Étique, you are enveloped in an atmosphere of tranquility and luxury.</p>
+<p>Enjoy complimentary champagne, artisan coffee, and personalized consultations with every visit.</p>
+<ul class="exp-list">
+<li>✦ Premium internationally sourced products</li>
+<li>✦ Highly trained specialist technicians</li>
+<li>✦ Private VIP suites available</li>
+</ul>
+</div>
+<div class="exp-image">Salon Interior</div>
+</div></div>
+</section>
+<section class="section booking-section" id="booking">
+<div class="container"><div class="booking-wrap">
+<div class="section-header"><h2>Reserve Your Time</h2><p>Please provide your details below to request a booking. Our concierge will confirm your appointment shortly.</p></div>
+<form class="booking-form" id="bookingForm">
+<div class="form-row"><div class="form-group"><label>First &amp; Last Name</label><input name="name" required="" type="text"/></div><div class="form-group"><label>Phone Number</label><input name="phone" required="" type="tel"/></div></div>
+<div class="form-row"><div class="form-group"><label>Service Category</label><select id="svcSelect" name="service" required=""><option value="">Select Service</option><option>Hair Services</option><option>Nail Services</option><option>Spa &amp; Aesthetics</option><option>Bridal Package</option></select></div><div class="form-group"><label>Specific Treatment (Optional)</label><input name="treatment" placeholder="e.g. Balayage, Gel Mani" type="text"/></div></div>
+<div class="form-row"><div class="form-group"><label>Date Requested</label><input name="date" required="" type="date"/></div><div class="form-group"><label>Time Preference</label><select name="time"><option>Morning (9AM - 12PM)</option><option>Afternoon (12PM - 4PM)</option><option>Evening (4PM - 7PM)</option></select></div></div>
+<button class="btn btn-primary btn-full" type="submit">Submit Request</button>
+</form>
+</div></div>
+</section>
+<footer class="footer"><div class="container">
+<div class="footer-brand">ÉTIQUE</div>
+<p>Luxury Beauty &amp; Spa. Lavington, Nairobi.</p>
+<div class="footer-links"><a href="https://wa.me/254700000002" target="_blank">WhatsApp</a> | <a href="tel:+254700000002">Call</a> | <a href="admin.html">Admin</a></div>
+<p class="copyright">© 2024 Étique Luxury Beauty. All rights reserved.</p>
+</div></footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
 </body></html>
